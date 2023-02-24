@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clicker"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_counter"
+        android:layout_width="@dimen/text_width"
+        android:layout_height="@dimen/text_height"
+        android:background="@drawable/ground"
+        android:gravity="center"
+        android:textColor="@color/cyanide"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bank"
+        android:textColor="@color/cyanide"
+        android:textSize="@dimen/text_size" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue"
+        android:onClick="onClickBtnAddRub"
+        android:text="@string/add_rub"
+        android:textColor="@color/cyanide" />
+
+
+
+</LinearLayout>

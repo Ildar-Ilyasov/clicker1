@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">clicker1</string>
+    <string name="dogs">Собак</string>
+    <string name="add_dogs">Добавить собаку</string>
+    <string name="add_rub">Добавить рубль</string>
+    <string name="bank">Баланс</string>
+</resources>
