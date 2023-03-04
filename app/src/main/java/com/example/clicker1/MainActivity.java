@@ -67,10 +67,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onRestoreInstanceState");
     }
 
-    private void resetUI() {
-        ((TextView) findViewById(R.id.txt_counter)).setText(counter.toString());
-        Log.d(TAG, "resetUI");
-    }
 
     public void onClickBtnAddRub(View view) {
         counter++;
