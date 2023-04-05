@@ -1,9 +1,5 @@
 package com.example.clicker1;
 
-
-
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -48,5 +44,29 @@ public class MainActivity extends AppCompatActivity {
         counter++;
         TextView counterView = findViewById(R.id.txt_counter);
         counterView.setText(counter.toString());
+    }
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(this, "onPause()", Toast.LENGTH_LONG).show();
+        Log.d(TAG, "onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(this, "onStop()", Toast.LENGTH_LONG).show();
+        Log.d(TAG, "onStop");
+    }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(this, "onRestart()", Toast.LENGTH_LONG).show();
+        Log.d(TAG, "onRestart");
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(this, "onDestroy()", Toast.LENGTH_LONG).show();
+        Log.d(TAG, "onDestroy");
     }
 }
